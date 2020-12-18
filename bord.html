@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic_Tac_Toe</title>
+    <link rel="stylesheet" type="text/css" href="bord.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Merienda+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fondamento&display=swap" rel="stylesheet">
+</head>
+<body >
+
+       
+
+    <div> 
+    	<div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+  </div>
+        <h1>◦•●<span class="blink"> Tic Tac Toe </span>●•◦</h1>
+         <button id="rstart" onclick="restart()"><p id="ps">New Game</p></button>
+        <button id="start" onclick="reset()"><p id ="sp">Restart Game</p></button>
+        <h5>◦• Score •◦</h5>
+        
+        
+        <table >
+
+        	<tr>
+                <td class="blink1"><button id ="s1"onclick="fill(this)"></button></td>
+                <td class="vert blink2"><button id="s2"onclick="fill(this)"></button></td>
+                <td class="blink3"><button id ="s3"onclick="fill(this)"></button></td>
+               
+            </tr>
+            <tr>
+                <td class="hori blink4"><button id="s4"onclick="fill(this)"></button></td>
+                <td class="vert hori blink5"><button id="s5"onclick="fill(this)"></button></td>
+                <td class="hori blink6"><button id="s6"onclick="fill(this)"></button></td>
+            </tr>
+            <tr>
+                <td class="blink7"><button id="s7"onclick="fill(this)"></button></td>
+                <td class="vert blink8"><button id="s8"onclick="fill(this)"></button></td>
+                <td class="blink9"><button id="s9"onclick="fill(this)"></button></td>
+               
+            </tr>
+        </table >
+        
+       
+
+    </div>
+     <h3>👸 X :-<p id ="x1"></p></h3>
+     <h4>👲 0 :-<p id ="o1"></p></h4>
+    
+     <h2>Winner :-<p id="win"></p></h2>
+    
+      
+
+
+ <script type="text/javascript" src="./bord.js"></script>
+ 
+</body>
+</html>
